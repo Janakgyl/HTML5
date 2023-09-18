@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form</title>
+  </head>
+  <body>
+    <form action="">
+      <fieldset>
+        <legend>HTML Dummy Form</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+
+        <br /><br />
+
+        <label for="age">Age</label>
+        <input type="text" id="age" />
+
+        <br /><br />
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+
+        <br /><br />
+
+        <label for="textarea1">Description</label>
+        <textarea id="textarea1"></textarea>
+
+        <br /><br />
+
+        <label for="telNo">Phone number: </label>
+        <input id="telNo" name="telNo" type="tel" list="defaultTels" />
+
+        <datalist id="defaultTels">
+          <option value="111-1111-1111"></option>
+          <option value="122-2222-2222"></option>
+          <option value="333-3333-3333"></option>
+          <option value="344-4444-4444"></option>
+        </datalist>
+
+        <input type="submit" value="Save" />
+      </fieldset>
+
+      <fieldset>
+        <legend>HTML Dummy Form -2</legend>
+
+        <label for="name">Name</label>
+        <input type="text" id="name" />
+
+        <br /><br />
+
+        <label for="age">Age</label>
+        <input type="text" id="age" />
+
+        <br /><br />
+
+        <label for="male">Male</label>
+        <input type="radio" name="gender" id="male" />
+
+        <label for="female">Female</label>
+        <input type="radio" name="gender" id="female" />
+
+        <br /><br />
+
+        <label for="phone">Phone</label>
+        <input
+          type="tel"
+          name="phone"
+          id="phone"
+          pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}"
+          required
+        />
+
+        <br /><br />
+
+        <label for="textarea1">Description</label>
+        <textarea id="textarea1"></textarea>
+
+        <br /><br />
+
+        <input type="submit" value="Save" />
+      </fieldset>
+    </form>
+  </body>
+</html>

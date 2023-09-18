@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Form practice</title>
+  </head>
+  <body>
+    <h1>Welcome to CodeHelp</h1>
+    <br />
+
+    <h2>Contact Us Form</h2>
+
+    <form>
+      <label for="name">Name</label>
+      <input id="name" type="text" placeholder="Enter your name" />
+      <br />
+
+      <label for="email">Email</label>
+      <input id="email" type="text" placeholder="Enter your email" />
+      <br />
+
+      <label for="contact">Contact</label>
+      <input
+        id="contact"
+        type="number"
+        placeholder="Enter your Contact number"
+      />
+      <br />
+
+      <label for="gender">Gender</label>
+      <select id="gender">
+        <option>Male</option>
+        <option>Female</option>
+      </select>
+      <br />
+
+      <label for="dob">Date Of Birth</label>
+      <input id="dob" type="date" />
+      <br />
+
+      <fieldset>
+        <legend>Rating:</legend>
+        <label>
+          <input id="rating-1" type="radio" name="rating" value="1" />
+          1
+        </label>
+        <label>
+          <input id="rating-2" type="radio" name="rating" value="2" />
+          2
+        </label>
+        <label>
+          <input id="rating-3" type="radio" name="rating" value="3" />
+          3
+        </label>
+        <label>
+          <input id="rating-4" type="radio" name="rating" value="4" />
+          4
+        </label>
+        <label>
+          <input id="rating-5" type="radio" name="rating" value="5" />
+          5
+        </label>
+      </fieldset>
+      <br />
+
+      <label for="message">Enter your message</label>
+      <br />
+      <textarea
+        id="message"
+        rows="6"
+        cols="50"
+        placeholder="Enter your message"
+      >
+      </textarea>
+
+      <br />
+      <input type="submit" value="Save" />
+      <input type="reset" value="Reset" />
+    </form>
+  </body>
+</html>
